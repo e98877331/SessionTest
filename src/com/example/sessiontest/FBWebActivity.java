@@ -6,8 +6,8 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.RelativeLayout.LayoutParams;
 
-public class FirstButtonView extends Activity {
-
+public class FBWebActivity extends Activity{
+	
 	WebView mWV;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -18,14 +18,10 @@ public class FirstButtonView extends Activity {
 		mWV.setWebViewClient(MainActivity.mWebViewClient);
 		this.setContentView(mWV,new LayoutParams(android.view.ViewGroup.LayoutParams.MATCH_PARENT,android.view.ViewGroup.LayoutParams.MATCH_PARENT));
 		
-		mWV.loadUrl("http://ec2-54-199-191-137.ap-northeast-1.compute.amazonaws.com/test/content.php");
+		mWV.loadUrl("http://www.facebook.com");
 	}
 	
-//	 WebViewClient mWebViewClient = new WebViewClient() {
-//		  @Override
-//		  public boolean shouldOverrideUrlLoading(WebView view, String url) {
-//		   view.loadUrl(url);
-//		   return true;
-//		  }
-//		 };
+
+	
+
 }
